@@ -42,8 +42,8 @@ class QuestionViewController: UIViewController {
         ]),
     ]
 
-    
     var questionIndex = 0
+    
     func updateUI(){
         buttonStackView.isHidden = true
         multipleStackView.isHidden = true
@@ -53,11 +53,11 @@ class QuestionViewController: UIViewController {
         let numberQuestion = questions[questionIndex]
         switch numberQuestion.type {
         case .single:
-            navigationItem.title
+            buttonStackView.isHidden = false
         case .multiple:
-             "Question 2"
+            multipleStackView.isHidden = false
         case .ranged:
-             "question 3"
+            RangeStackView.isHidden = false
         }
     }
     /*
