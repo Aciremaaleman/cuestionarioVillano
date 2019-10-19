@@ -12,10 +12,13 @@ import Foundation
 //type: ResponseType
 //answers: [Answer]
 
-let questions = ["single": "Te consideras", "ranged": "Tus actos malvados los haces por?", "multiple": "Escoje los colores de tu atuendo perfecto"]
-
-
-
-
+struct Question {
+    var text: String
+    var type: ResponseType
+    var answers: [Answer]
+}
+enum ResponseType{
+    case single, multiple, ranged
+}
 
 

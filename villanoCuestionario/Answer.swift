@@ -7,3 +7,22 @@
 //
 
 import Foundation
+struct Answer {
+    var text : String
+    var type: Type
+}
+enum Type {
+    case Malefica, Hades, Scar, Izma
+    var definition : String{
+        switch self {
+        case .Malefica:
+            return "Eres Malefica"
+        case .Hades:
+            return "Eres Hades"
+        case .Scar:
+            return "Eres Scar"
+        default:
+            return "Eres Izma"
+        }
+    }
+}
